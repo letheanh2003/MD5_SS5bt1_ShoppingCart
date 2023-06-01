@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Order</title>
+</head>
+<body>
+<p>
+  <a href="/shop">Shop</a>
+</p>
+<h1>Create Order</h1>
+<form action="/addOrder" method="post">
+  <table>
+    <tr>
+      <td>Tên người nhận:</td>
+      <td><input name="nameRec" type="text"></td>
+    </tr>
+    <tr>
+      <td>Số điện thoại:</td>
+      <td><input name="phone" type="text"></td>
+    </tr>
+    <tr>
+      <td>Địa chỉ:</td>
+      <td><input name="address" type="text"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <button type="submit">Đặt hàng</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
